@@ -4,8 +4,6 @@ services:
     image: zefhemel/silverbullet
     restart: unless-stopped
     env_file: stack.env
-    environment:
-    - SB_USER=admin:admin
     volumes:
       - space:/space
     ports:
