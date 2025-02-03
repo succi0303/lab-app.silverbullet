@@ -9,6 +9,6 @@ services:
     volumes:
       - space:/space
     ports:
-      - 3006:3000
+      - 3007:3000
 volumes:
   space:
