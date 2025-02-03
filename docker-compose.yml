@@ -1,0 +1,14 @@
+version: "3"
+services:
+  silverbullet:
+    image: zefhemel/silverbullet
+    restart: unless-stopped
+    env_file: stack.env
+    environment:
+    - SB_USER=admin:admin
+    volumes:
+      - space:/space
+    ports:
+      - 3000:3000
+volumes:
+  space:
