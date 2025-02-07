@@ -1,11 +1,12 @@
 version: "3"
 services:
   silverbullet:
-    image: zefhemel/silverbullet
+    image: zefhemel/silverbullet:latest
+    container_name: silverbullet
     restart: unless-stopped
     env_file: stack.env
     volumes:
-      - space:/space
+      - space:/space:rw
     ports:
       - 3008:3000
 volumes:
